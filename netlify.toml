@@ -1,6 +1,6 @@
 [build]
-command = "cd Armoghan-Blogs && hugo  --minify -D "
-publish = "Armoghan-Blogs/public"
+command = "hugo  --minify -D "
+publish = "public"
 
 [build.environment]
 HUGO_THEMESDIR = "../.."

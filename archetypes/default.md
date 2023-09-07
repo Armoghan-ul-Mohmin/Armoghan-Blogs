@@ -4,11 +4,12 @@ date: {{ .Date }}
 image:
 summary: ""
 showReadingTime: false
-tags:
-categories:
+tags: []
+categories: []
+series: []
 _build:
   render: "false"
   list: "local"
-comments : false
+showComments : false
 draft : true
 ---

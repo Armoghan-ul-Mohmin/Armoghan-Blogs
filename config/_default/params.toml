@@ -59,7 +59,7 @@ showTaxonomies = true
 showAuthorsBadges = true
 showWordCount = true
 showSummary = true
-showComments = true
+showComments = false
 sharingLinks = [
     "linkedin",
     "twitter",

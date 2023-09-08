@@ -7,9 +7,6 @@ showReadingTime: true
 tags: ['Hugo' , 'Static Site']
 categories: ['Website']
 series: []
-_build:
-  render: "false"
-  list: "local"
 showComments : true
 newsletter : true
 draft : false

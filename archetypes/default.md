@@ -8,9 +8,6 @@ tags: []
 categories: []
 series: []
 series_order: 
-_build:
-  render: "false"
-  list: "local"
 showComments : false
 newsletter : true
 draft : true

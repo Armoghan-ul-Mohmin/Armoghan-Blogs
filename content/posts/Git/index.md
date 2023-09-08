@@ -8,9 +8,6 @@ tags: ['git' , 'github']
 categories: ['Windows' , 'Linux' , 'MacOs']
 series: [Git]
 series_order: 1
-_build: 
-  render: "false"
-  list: "local"
 showComments : true
 newsletter : true
 draft : false

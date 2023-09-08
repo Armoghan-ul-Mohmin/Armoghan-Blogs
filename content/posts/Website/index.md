@@ -11,6 +11,7 @@ _build:
   render: "false"
   list: "local"
 showComments : true
+newsletter : true
 draft : false
 ---
 

@@ -28,7 +28,7 @@ weight = 50
 # the copyright notice. Configure as per the main menu above.
 [[footer]]
 name = "Tags"
-url = "https://armoghan-blogs-2.netlify.app/tags"
+url = "/tags"
 weight = 10
 
 [[footer]]

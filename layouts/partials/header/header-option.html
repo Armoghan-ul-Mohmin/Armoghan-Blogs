@@ -1,5 +1,5 @@
-{{ if .HasChildren }} 
-  {{ partial "header/header-option-nested.html" . }}
+{{ if .HasChildren }}
+{{ partial "header/header-option-nested.html" . }}
 {{ else }}
-  {{ partial "header/header-option-simple.html" . }}
+{{ partial "header/header-option-simple.html" . }}
 {{ end }}

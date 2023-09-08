@@ -1,5 +1,5 @@
-<a href="{{ .URL }}" {{ if or (strings.HasPrefix .URL "http:" ) (strings.HasPrefix .URL "https:" ) }} target="_blank" {{
-    end }} class="flex items-center">
+<a href="{{ .URL }}" {{ if or (strings.HasPrefix .URL "http:" ) (strings.HasPrefix .URL "https:" ) }} {{ end }}
+    class="flex items-center">
     {{ if .Pre }}
     <span {{ if and .Pre .Name}} class="mr-1" {{ end }}>
         {{ partial "icon.html" .Pre }}

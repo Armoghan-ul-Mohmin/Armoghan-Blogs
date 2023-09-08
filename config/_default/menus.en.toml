@@ -1,16 +1,16 @@
 [[main]]
 name = "Home"
-pageRef = "/"
+url = "https://armoghan-blogs-2.netlify.app/"
 weight = 10
 
 [[main]]
 name = "Blog"
-pageRef = "posts"
+url = "https://armoghan-blogs-2.netlify.app/posts"
 weight = 20
 
 [[main]]
 name = "Cheatsheet"
-pageRef = "cheatsheets"
+url = "https://armoghan-blogs-2.netlify.app/cheatsheets"
 weight = 30
 
 [[main]]
@@ -28,10 +28,10 @@ weight = 50
 # the copyright notice. Configure as per the main menu above.
 [[footer]]
 name = "Tags"
-pageRef = "tags"
+url = "https://armoghan-blogs-2.netlify.app/tags"
 weight = 10
 
 [[footer]]
 name = "Categories"
-pageRef = "categories"
+url = "https://armoghan-blogs-2.netlify.app/categories"
 weight = 20

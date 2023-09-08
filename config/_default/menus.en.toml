@@ -1,16 +1,16 @@
 [[main]]
 name = "Home"
-url = "https://armoghan-blogs-2.netlify.app/"
+url = "/"
 weight = 10
 
 [[main]]
 name = "Blog"
-url = "https://armoghan-blogs-2.netlify.app/posts"
+url = "/posts"
 weight = 20
 
 [[main]]
 name = "Cheatsheet"
-url = "https://armoghan-blogs-2.netlify.app/cheatsheets"
+url = "/cheatsheets"
 weight = 30
 
 [[main]]
@@ -33,5 +33,10 @@ weight = 10
 
 [[footer]]
 name = "Categories"
-url = "https://armoghan-blogs-2.netlify.app/categories"
+url = "/categories"
 weight = 20
+
+[[footer]]
+name = "Series"
+url = "/series"
+weight = 30

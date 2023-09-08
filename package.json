@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My Personal Hugo Blogs Website build with Blowfish Theme",
   "scripts": {
-    "start": "hugo server -D",
+    "start": "hugo server -D  --disableFastRender",
     "fullinstall": "npm run preinstall && npm install && npm run postinstall",
     "preinstall": "rimraf assets/vendor",
     "postinstall": "vendor-copy",
@@ -89,9 +89,9 @@
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
     "@tailwindcss/forms": "^0.5.4",
-    "commander": "^11.0.0"
+    "commander": "^11.0.0",
+    "firebase": "^10.3.1"
   },
-  "license": "MIT",
-  "author": "Armoghan",
-  "license": "ISC"
+  "license": "ISC",
+  "author": "Armoghan"
 }

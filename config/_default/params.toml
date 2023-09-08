@@ -112,13 +112,13 @@ cardView = true
 cardViewScreenWidth = false
 
 [firebase]
-apiKey = "AIzaSyCT-ZbvUmG1Wcj3FG-rbq2wMUoj8c7grkk"
-authDomain = "armoghan-blogs.firebaseapp.com"
-projectId = "armoghan-blogs"
-storageBucket = "armoghan-blogs.appspot.com"
-messagingSenderId = "15885828986"
-appId = "1:15885828986:web:52c5afcb1ce8778437ccc3"
-measurementId = "G-EH3T9VZ3DM"
+apiKey = "AIzaSyB5XaU7EhAGcpGwAtLnFoSTyRtrdpWibNo"
+authDomain = "blogs-like-views.firebaseapp.com"
+projectId = "blogs-like-views"
+storageBucket = "blogs-like-views.appspot.com"
+messagingSenderId = "629235443508"
+appId = "1:629235443508:web:b1ac6bd95da076edbca761"
+measurementId = "G-YXEYFMH68B"
 
 [fathomAnalytics]
 

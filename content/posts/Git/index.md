@@ -1,5 +1,5 @@
 ---
-title: "Git Setup"
+title: "How to Setup Git"
 date: 2023-03-11T19:13:17+05:00
 image:
 summary: "Introduction to Git"
@@ -7,7 +7,7 @@ showReadingTime: true
 tags: ['git' , 'github']
 categories: ['Windows' , 'Linux' , 'MacOs']
 series: [Git]
-series_order: 1
+series_order: 2
 showComments : true
 newsletter : true
 draft : false

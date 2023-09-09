@@ -2,7 +2,7 @@
 title: "How I Setup My Website"
 date: 2023-09-08T13:42:05+05:00
 image: 
-summary: "This shows you have I automate my workflows and setup my website for maximum productivity and search The best part is th"
+summary: "This shows you have I automate my workflows and setup my website."
 showReadingTime: true
 tags: ['Hugo']
 categories: ['Website']

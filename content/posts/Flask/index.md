@@ -1,6 +1,6 @@
 ---
 title: "Flask"
-date: 2023-09-09T19:13:17+05:00
+date: 2023-09-10T19:13:17+05:00
 image: 
 summary: "Web Development Using Flask and Python"
 showReadingTime: true

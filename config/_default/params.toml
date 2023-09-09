@@ -112,13 +112,13 @@ cardView = true
 cardViewScreenWidth = false
 
 [firebase]
-apiKey = "AIzaSyB5XaU7EhAGcpGwAtLnFoSTyRtrdpWibNo"
-authDomain = "blogs-like-views.firebaseapp.com"
-projectId = "blogs-like-views"
-storageBucket = "blogs-like-views.appspot.com"
-messagingSenderId = "629235443508"
-appId = "1:629235443508:web:b1ac6bd95da076edbca761"
-measurementId = "G-YXEYFMH68B"
+apiKey = "AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY"
+authDomain = "blowfish-21fff.firebaseapp.com"
+projectId = "blowfish-21fff"
+storageBucket = "blowfish-21fff.appspot.com"
+messagingSenderId = "60108104191"
+appId = "1:60108104191:web:039842ebe1370698b487ca"
+measurementId = "G-PEDMYR1V0K"
 
 [fathomAnalytics]
 

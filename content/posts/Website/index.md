@@ -4,7 +4,7 @@ date: 2023-09-08T13:42:05+05:00
 image: 
 summary: "This shows you have I automate my workflows and setup my website for maximum productivity and search The best part is th"
 showReadingTime: true
-tags: ['Hugo' , 'Static Site']
+tags: ['Hugo']
 categories: ['Website']
 series: []
 showComments : true

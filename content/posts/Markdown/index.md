@@ -5,9 +5,9 @@ image:
 summary: "An overview of Markdown, how it works, and what you can do with it."
 showReadingTime: true
 tags: ['Markdown']
-categories: ['Linux' , 'MacOs' , 'Windows']
-series: ['Static Site Generator']
-series_order: 2
+categories: []
+series: []
+series_order: 
 showComments : true
 newsletter : true
 draft : false
@@ -90,7 +90,7 @@ If you’re familiar with HTML, CSS, and version control, check out Jekyll, a po
 **Note:** I used Jekyll to create the Markdown Guide. You can view the source code on GitHub
 {{< /alert >}}
 
-{{< github repo="/Armoghan-Blogs/tree/main/content/posts/Markdown" >}}
+<!-- {{< github repo="Armoghan-ul-Mohmin/Armoghan-Blogs" >}} -->
 
 
 

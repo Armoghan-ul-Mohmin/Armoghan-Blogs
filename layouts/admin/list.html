@@ -1,0 +1,131 @@
+{{ define "main" }}
+
+<style>
+    .custom-card {
+        padding: 8px;
+        margin: 8px;
+    }
+
+    h2 {
+        font-weight: 700;
+    }
+
+    .custom-card div {
+        font-weight: 500;
+    }
+</style>
+
+<div class="container-md">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-1 px-lg-2">
+            <div class="text-center">
+                <div class="text-4xl font-bold mb-2 underline">Admin Panel</div>
+                <div class="container mx-auto text-center">
+                    <div class="container  m-8 p-5">
+                        <div class="flex flex-wrap gap-4 justify-center items-center">
+                            <!-- Total articles card -->
+                            <div class="w-full md:w-1/2 lg:w-1/4">
+                                <div class="custom-card">
+                                    <h2 class="text-2xl mb-2">Total articles:</h2>
+                                    <div class="text-1xl">{{ len .Site.RegularPages }}</div>
+                                </div>
+                            </div>
+
+                            <!-- Total tags card -->
+                            <div class="w-full md:w-1/2 lg:w-1/4 ">
+                                <div class="custom-card">
+                                    <h2 class="text-2xl mb-2">Total tags:</h2>
+                                    <div class="text-1xl">{{ len ($.Site.GetPage "taxonomyTerm" "tags").Pages }}</div>
+                                </div>
+                            </div>
+
+                            <!-- Total sections card -->
+                            <div class="w-full md:w-1/2 lg:w-1/4">
+                                <div class="custom-card">
+                                    <h2 class="text-2xl mb-2">Total sections:</h2>
+                                    <div class="text-1xl">{{ len (where .Site.Pages "Kind" "section") }}</div>
+                                </div>
+                            </div>
+
+                            <!-- Total Series card -->
+                            <!-- <div class="w-full md:w-1/2 lg:w-1/4">
+                                <div class="custom-card">
+                                    <h2 class="text-2xl mb-2">Total Series:</h2>
+                                    <div class="text-1xl">{{ len (where .Site.RegularPages "Type" "series") }}</div>
+                                </div> -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sections Summary -->
+                <section class="mt-6 p-4 rounded-lg bg-gray-100">
+                    <h2 class="text-2xl mb-2 underline">Sections Summary:</h2>
+                    <div class="text-1xl">
+                        {{ $sections := slice }}
+                        {{ range .Site.Sections }}
+                        {{ $sectionPages := where $.Site.RegularPages "Section" .Title }}
+                        {{ $sections = $sections | append (dict "title" .Title "permalink" .Permalink "total" (len
+                        $sectionPages)) }}
+                        {{ end }}
+                        <table class="w-full table-auto border-collapse">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-2 border-b">No.</th>
+                                    <th class="px-4 py-2 border-b">Section</th>
+                                    <!-- <th class="px-4 py-2 border-b">Total articles</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{ range $index, $section := $sections }}
+                                <tr>
+                                    <td class="px-4 py-2 border-b">{{ add $index 1 }}</td>
+                                    <td class="px-4 py-2 border-b"><a href="{{ $section.permalink }}">{{
+                                            $section.title
+                                            }}</a></td>
+                                    <!-- <td class="px-4 py-2 border-b">{{ $section.total }}</td> -->
+                                </tr>
+                                {{ end }}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="mt-2 p-4 rounded-lg bg-gray-100">
+                    <h2 class="text-2xl mb-2 underline">Tags Summary:</h2>
+                    <div class="text-1xl">
+                        {{ $tags := slice }}
+                        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                        {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                        {{ $tags = $tags | append (dict "name" $name "permalink" .Permalink) }}
+                        {{ end }}
+                        {{ end }}
+                        <table class="w-full table-auto border-collapse">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-2 border-b">No.</th>
+                                    <th class="px-4 py-2 border-b">Tags</th>
+                                    <th class="px-4 py-2 border-b">Total articles</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{ range $index, $tag := $tags }}
+                                <tr>
+                                    <td class="px-4 py-2 border-b">{{ add $index 1 }}</td>
+                                    <td class="px-4 py-2 border-b"><a href="{{ $tag.permalink }}">{{ $tag.name
+                                            }}</a></td>
+                                    <td class="px-4 py-2 border-b">{{ len ($.Site.GetPage (printf "/tags/%s"
+                                        $tag.name)).Pages }}</td>
+                                </tr>
+                                {{ end }}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{{ end }}

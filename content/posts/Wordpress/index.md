@@ -13,7 +13,7 @@ newsletter : true
 draft : false
 ---
 
-# How to Install WordPress on Docker (Windows, macOS, and Linux)
+
 
 Setting up an isolated environment for developing WordPress websites can initially seem challenging. Luckily, containerization tools like Docker exist, which help to streamline the development, testing, and deployment processes.
 

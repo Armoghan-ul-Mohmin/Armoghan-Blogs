@@ -1,4 +1,5 @@
 <head>
+  <meta name="google-site-verification" content="mH5gew4CciRL_kO907muy5RhZjt6kRPRmVFvV_zCRyM" />
   <meta charset="utf-8" />
   {{ with .Site.Language.Params.htmlCode | default .Site.LanguageCode }}
   <meta http-equiv="content-language" content="{{ . }}" />
@@ -119,34 +120,6 @@
   {{ if templates.Exists "partials/extend-head.html" }}
   {{ partialCached "extend-head.html" .Site }}
   {{ end }}
-  <meta name="theme-color" />
-  {{/* Firebase */}}
-  {{ with $.Site.Params.firebase }}
-  {{ if isset $.Site.Params "firebase" }}
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-  <script>
-
-    const firebaseConfig = {
-      apiKey: {{ $.Site.Params.firebase.apiKey }},
-    authDomain: { { $.Site.Params.firebase.apiKey } },
-    projectId: { { $.Site.Params.firebase.projectId } },
-    storageBucket: { { $.Site.Params.firebase.storageBucket } },
-    messagingSenderId: { { $.Site.Params.firebase.messagingSenderId } },
-    appId: { { $.Site.Params.firebase.appId } },
-    measurementId: { { $.Site.Params.firebase.measurementId } }
-    };
-
-    var app = firebase.initializeApp(firebaseConfig);
-    var db = firebase.firestore();
-    var auth = firebase.auth();
-
-  </script>
-  {{ end }}
-  {{ end }}
-
-  <meta name="google-site-verification" content="mH5gew4CciRL_kO907muy5RhZjt6kRPRmVFvV_zCRyM" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EH3T9VZ3DM"></script>
   <script>
@@ -156,4 +129,29 @@
 
     gtag('config', 'G-EH3T9VZ3DM');
   </script>
+  <meta name="theme-color" />
+  {{/* Firebase */}}
+  {{ with $.Site.Params.firebase }}
+  {{ if isset $.Site.Params "firebase" }}
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "{{ $.Site.Params.firebase.apiKey }}",
+      authDomain: "{{ $.Site.Params.firebase.authDomain }}",
+      projectId: "{{ $.Site.Params.firebase.projectId }}",
+      storageBucket: "{{ $.Site.Params.firebase.storageBucket }}",
+      messagingSenderId: "{{ $.Site.Params.firebase.messagingSenderId }}",
+      appId: "{{ $.Site.Params.firebase.appId }}",
+      measurementId: "{{ $.Site.Params.firebase.measurementId }}"
+    };
+
+    var app = firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+  </script>
+
+  {{ end }}
+  {{ end }}
 </head>

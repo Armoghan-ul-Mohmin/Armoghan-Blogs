@@ -9,7 +9,6 @@ defaultBackgroundImage = "img/background.jpeg" # used as default for background 
 defaultFeaturedImage = "/img/ocebackground-altan.jpeg"
 highlightCurrentMenuArea = true
 smartTOC = true
-smartTOCHideUnfocusedChildren = true
 
 [header]
 layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-fill-blur

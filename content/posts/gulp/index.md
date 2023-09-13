@@ -8,7 +8,7 @@ tags: ['gulp']
 categories: ['Template' , 'Tutorial']
 series: ['Frontend Developement']
 series_order: 5
-showComments : false
+showComments : true
 newsletter : true
 draft : false
 ---

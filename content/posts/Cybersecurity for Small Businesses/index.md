@@ -2,7 +2,7 @@
 title: "Cyber Security for Small Businesses"
 date: 2023-09-12T19:13:17+05:00
 image: 
-summary: ""
+summary: "Importance of Cybersecurity for Small Businesses."
 showReadingTime: true
 tags: ['cybersecurity']
 categories: ['IT']

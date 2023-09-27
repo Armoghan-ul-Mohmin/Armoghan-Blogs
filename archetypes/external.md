@@ -4,7 +4,7 @@ date: {{ .Date }}
 image:
 externalUrl: ""
 summary: ""
-showReadingTime: false
+showReadingTime: true
 tags: []
 categories: []
 series: []

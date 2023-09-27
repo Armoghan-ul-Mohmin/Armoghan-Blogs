@@ -3,7 +3,7 @@ title: "Website Starter Template"
 date: 2023-09-13T18:10:21+05:00
 image:
 summary: "A basic website starter template using Gulp and Sass."
-showReadingTime: false
+showReadingTime: true
 tags: ['gulp']
 categories: ['Template' , 'Tutorial']
 series: ['Frontend Developement']

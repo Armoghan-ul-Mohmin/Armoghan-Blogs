@@ -37,7 +37,7 @@ Before you begin, ensure you have met the following requirements:
 {{< github repo="Armoghan-ul-Mohmin/Website-Starter" >}}
 
 ```bash
-   git clone https://github.com/Armoghan-ul-MohminWebsite-Starter.git
+   git clone https://github.com/Armoghan-ul-Mohmin/Website-Starter.git
 ```
 2. Navigate to the project directory:
 
